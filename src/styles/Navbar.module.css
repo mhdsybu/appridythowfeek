@@ -1,0 +1,92 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F21DA8;
+  padding: 1rem 2rem;
+  color: white;
+  height: 50px; /* Fix the height of the navbar */
+  font-weight: bold;
+  position: fixed; /* Fix the navbar at the top */
+  width: 96%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 125px; /* Increase the size of the logo */
+  height: auto;
+}
+
+.logo span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  list-style-type: none; /* Remove bullets */
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navLinks a:hover {
+  color: #960CF2;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.ctaBtn, .ctaBtnAlt {
+  background-color: #fff;
+  color: #960CF2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.ctaBtn:hover, .ctaBtnAlt:hover {
+  background-color: #F21DA8;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .ctaBtn, .ctaBtnAlt {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

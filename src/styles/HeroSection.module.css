@@ -1,0 +1,47 @@
+.hero {
+  background: url('../../public/images/hero.jpg') no-repeat center top/cover;
+  height: 250px;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  padding-top: 100px;
+}
+
+h1 {
+  padding-top: 60px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, #ff0000, #f42de0); /* Gradient colors */
+  background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.ctaBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #ff5733;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect */
+.ctaBtn:hover {
+  background-color: #ff5733;  /* Change background to the button text color */
+  color: white;  /* Change text color to white when hovered */
+  transform: scale(1.05);  /* Optional: Slightly increase size for hover effect */
+}
